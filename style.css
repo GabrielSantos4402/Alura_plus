@@ -1,0 +1,530 @@
+/* Fontes utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Variavel */
+:root{
+    --background-color:#00030c;
+    --main-text-color:#ffffff;
+    --second-text-color:#c0c0c0;
+    --botton-blue:#167BF7;
+    --color-black:#000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration:none;
+}
+body{
+    background-color: var(--background-color);
+}
+
+section{
+    padding:5% 10%;
+    text-align: center;
+}
+.conteudo__secao__alura_combo{
+    background-image: url(./assets/Background.png);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    height: 80vh;
+}
+.alura__combo-box{
+    gap: 30px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width:35%;
+}
+.alura__combo-box .texto-principal{
+    color: var(--text-main-color);
+    font-size: 1.75rem;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+}
+.secao__alura_combo__botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.secao__alura_combo__botoes a{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "inter", sans-serif;
+    border-radius: 5px;
+    padding: 15px;
+}
+.secao__alura_combo__botoes .botao-transparente{
+    border: 1px solid var(--main-text-color);
+}
+.botao-azul{
+    padding: 15px;
+    background-color: var(--botton-blue);
+}
+
+.secao__alura_combo__botoes .botao-transparente:hover{
+    background-color: var(--color-black);
+    border: none;
+}
+.secao__alura_combo__botoes .botao-azul:hover{
+    background-color: white;
+    color: var(--color-black);
+}
+.texto__aviso_preço{
+    color: var(--second-text-color);
+}
+
+/*------------------------------------------------------------*/
+
+.conteudo__seu__jeito{
+
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.seu-jeito__box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+.seu-jeito__box p{
+    color: var(--second-text-color);
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+}
+.seu-jeito__box .texto-titulo{
+    font-family: "inter", sans-serif;
+    color: var(--main-text-color);
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+
+/* -----------------------------------------------------------*/
+.conteudo__combo_plus{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.combo-plus__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.combo-plus__box a{
+    text-align: center;
+    width: 30%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "inter", sans-serif;
+    border-radius: 5px;
+    padding: 15px;
+}
+.combo-plus__box p{
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+    color: var(--second-text-color);
+}
+
+/* ---------------------------------------------------------- */
+
+.conteudo__cursos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.curso__box{
+    width: 40%;
+}
+
+.curso__box .texto-titulo{
+    font-family: "inter", sans-serif;
+    color: var(--main-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.curso__box p{
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+    color: var(--second-text-color);
+}
+
+/* ---------------------------------------------------------- */
+
+.conteudo__dispositivo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.conteudo__dispositivo .texto-titulo{
+    font-family: "inter", sans-serif;
+    color: var(--main-text-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.dispositivo__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dispositivos{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dispositivos__textos{
+    color: var(--main-text-color);
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+/* ---------------------------------------------------------- */
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.rodape .botoes-rodape{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+}
+.botoes-rodape a{
+    color: var(--main-text-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.rodape p{
+    font-family: "Inter", sans-serif;
+    color: var(--second-text-color);
+    font-size: 0.85rem;
+    font-weight: 400;
+    width: 70%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px){
+    section{
+        width: 100%;
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    /* ------------------------ */
+    .alura__combo-box{
+        margin-top: 10%;
+        width: 100%;
+        gap: 70px;
+    }
+
+    .alura__combo-box .texto-principal{
+        font-size: 4rem;
+    }
+    .alura__combo-box figure{
+        width: 100%;
+    }
+    .alura__combo-box figure img{
+        width: 70%;
+    }
+    .secao__alura_combo__botoes{
+        gap: 50px;
+        width: 80%;
+    }
+    .secao__alura_combo__botoes a{
+        font-size: 2rem;
+        padding: 6%;
+    }
+    .texto__aviso_preço{
+        font-size: 2rem;
+    }
+
+    .seu-jeito__box{
+        justify-content: space-around;
+    }
+    .seu-jeito__box .texto-titulo{
+        font-size: 2.5rem;
+    }
+    .seu-jeito__box p{
+        font-size: 1.5rem;
+    }
+    .combo-plus__box p{
+        font-size: 1.5rem;
+    }
+    .combo-plus__box a{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .curso__box p{
+        font-size: 1.5rem;
+    }
+    .curso__box .texto-titulo{
+        font-size: 2.5rem;
+    }
+    .rodape p {
+        font-size: 1.5rem;
+    }
+    .rodape figure{
+        width: 20%;
+    }
+    .rodape img{
+        width: 100%;
+    }
+    .botoes-rodape a{
+        font-size: 1.5rem;
+    }
+    .rodape p{
+        width: 100%;
+    }
+}
+
+/* Media queries */
+@media (max-width: 768px){
+ /* Configuraçoes reset */
+
+    main{
+        padding: 0 5%;
+    }
+    section{
+        margin: 10% 0;
+        flex-direction: column;
+
+    }
+    figure{
+        width: 100%;
+    }
+    .imagens-combos{
+        width: 100%
+    }
+    .dispositivo__box{
+        flex-direction: column;
+    }
+    /* -------------------------------- */
+
+    .alura__combo-box{
+        width: 100%;
+        gap: 50px;
+    }
+    .conteudo__secao__alura_combo{
+            height: 100%;
+            background-image: none;
+    }
+    .alura__combo-box .texto-principal{
+        font-size: 3.5rem
+    }
+    .alura__combo-box figure{
+        width: 70%;
+    }
+    .alura__combo-box .imagens-combos{
+        width: 100%;
+    }
+    .secao__alura_combo__botoes{
+        width: 100%;
+        gap: 25px;
+    }
+    .secao__alura_combo__botoes a{
+        font-family: "inter", sans;
+        font-weight: 700;
+        padding: 7%;
+        font-size: 2rem;
+    }
+    .texto__aviso_preço{
+        font-size: 2rem;
+    }
+    .seu-jeito__box{
+        text-align: center;
+        width: 100%;
+    }
+    .seu-jeito__box p {
+        font-size: 1.5rem;
+    }
+    .conteudo__combo_plus{
+    flex-direction: column-reverse;
+    }
+    .combo-plus__box{
+        text-align: center;
+        gap: 40px;
+        width: 100%;
+    }
+    .combo-plus__box a, .combo-plus__box p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .curso__box{
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .curso__box .texto-titulo{
+        font-size: 3.5rem;
+    }
+    .curso__box p{
+        font-size: 2rem;
+    }
+    .conteudo__dispositivo .texto-titulo{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .dispositivo__box{
+        align-items: center;
+        width: 100%;
+    }
+    .dispositivo__box img{
+        width: 100%;
+    }
+    .dispositivos{
+        width: 100%;
+        text-align: center;
+    }
+    .dispositivos span{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .rodape{
+        gap: 50px;
+    }
+    .rodape p {
+        font-size: 1.5rem;
+    }
+    .rodape img{
+        width: 100%;
+    }
+    .botoes-rodape a{
+        font-size: 1.5rem;
+    }
+    .rodape p{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 425px){
+
+    /* Configuraçoes reset */
+
+    main{
+        padding: 0 5%;
+    }
+    section{
+        margin: 10% 0;
+        flex-direction: column;
+    }
+    figure{
+        width: 100%;
+    }
+    .imagens-combos{
+        width: 100%
+    }
+    .dispositivo__box{
+        flex-direction: column;
+    }
+
+    /* ------------------------- */
+
+    .alura__combo-box{
+        width: 100%;
+        gap: 40px;
+    }
+    .conteudo__secao__alura_combo{
+        height: auto;
+
+    }
+    .secao__alura_combo__botoes a{
+        font-size: 1rem;
+    }
+    .alura__combo-box .texto-principal{
+        font-size: 2rem;
+    }
+    .texto__aviso_preço{
+        font-size: 1rem;
+    }
+    .seu-jeito__box{
+        text-align: center;
+        width: 100%;
+    }
+    .seu-jeito__box p {
+        font-size: 1rem;
+    }
+    .seu-jeito__box .texto-titulo{
+        font-size: 2rem;
+    }
+
+    .conteudo__combo_plus{
+        flex-direction: column-reverse;
+    }
+    .combo-plus__box{
+        text-align: center;
+        width: 100%;
+    }
+    .combo-plus__box a, .combo-plus__box p{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .curso__box{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .curso__box .texto-titulo{
+        font-size: 2rem;
+    }
+    .curso__box p{
+        font-size: 1rem;
+    }
+    .conteudo__dispositivo .texto-titulo{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .dispositivo__box{
+        align-items: center;
+        width: 100%;
+    }
+    
+    .dispositivo__box img{
+        width: 100%;
+    }
+    .dispositivos{
+        width: 100%;
+        text-align: center;
+    }
+    .botoes-rodape a{
+        font-size: 0.85rem;
+    }
+    .rodape img{
+        width: 100%;
+    }
+    .rodape p{
+        font-size: 0.85rem;
+        width: 100%;
+    }
+}
